@@ -27,18 +27,18 @@ public class JobForm {
         with correct validation attributes and display names.
         Don't forget to add getters and setters
      */
+//allow form display AND form submission, cheryl already put in the work for the name data, copy
+    //instead of employer use employerId
+    //mimic the code in place for employerID and the employers list for the other job field types.
+
     @NotNull
     private int locationId;
 
     @NotNull
-    private int coreCompetencyId;
+    private int coreCompetenciesId;
 
     @NotNull
     private int positionTypeId;
-
-    private String location;
-    private String coreCompetency;
-    private String positionType;
 
     private ArrayList<Employer> employers;
     private ArrayList<Location> locations;
@@ -84,12 +84,12 @@ public class JobForm {
         this.locationId = locationId;
     }
 
-    public int getCoreCompetencyId() {
-        return coreCompetencyId;
+    public int getCoreCompetenciesId() {
+        return coreCompetenciesId;
     }
 
-    public void setCoreCompetencyId(int coreCompetencyId) {
-        this.coreCompetencyId = coreCompetencyId;
+    public void setCoreCompetenciesId(int coreCompetenciesId) {
+        this.coreCompetenciesId = coreCompetenciesId;
     }
 
     public int getPositionTypeId() {
@@ -98,30 +98,6 @@ public class JobForm {
 
     public void setPositionTypeId(int positionTypeId) {
         this.positionTypeId = positionTypeId;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getCoreCompetency() {
-        return coreCompetency;
-    }
-
-    public void setCoreCompetency(String coreCompetency) {
-        this.coreCompetency = coreCompetency;
-    }
-
-    public String getPositionType() {
-        return positionType;
-    }
-
-    public void setPositionType(String positionType) {
-        this.positionType = positionType;
     }
 
     public ArrayList<Employer> getEmployers() {
